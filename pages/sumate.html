@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sumate</title>
+	<link rel="shortcut icon" href="../img/icon.jfif">
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+	<div class="grid">
+	<header class="header">
+		<div>
+		<img src="../img/Logo.png" alt="Logo" class="encabezado__img">
+		<h1 class="encabezado__titulo">Sumate</h1>
+		</div>
+		<nav>
+			<ul class="nav__enlace">
+				<li><a href="./contacto.html">Contacto</a></li>
+				<li><a href="./sumate.html">Sumate</a></li>
+				<li><a href="./sobre-mi.html">Sobre Mi</a></li>
+				<li><a href="./tracklist.html">Tracklist</a></li>
+				<li><a href="../index.html">Inicio</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<form action="" class="form__data">		
+			<fieldset>
+				<legend>Informacion Personal para Registro</legend>
+			<section class="sumate">
+			<div class="form__div">
+				<div class="form__text">
+					<label for="nombre_apellido">Nombre y Apellido:</label>
+					<input type="text" name="nombre_apellido" id="nombre_apellido" placeholder="Nombre y Apellido">
+				</div>
+				<div class="form__text">
+					<label for="contraseña">Contraseña:</label>
+					<input type="password" name="contraseña" id="contraseña" placeholder="Password">
+				</div>
+			</div>
+			<div class="form__div">
+				<div class="form__text">
+					<label for="ingresa_tu_mail">Ingresa tu mail:</label>
+					<input type="Email" name="ingresa_tu_mail" id="ingresa_tu_mail" placeholder="Fulanito_123@gmail.com">
+				</div>
+				<div class="form__text">
+					<label for="edad">Edad:</label>
+					<input type="date" name="edad" id="edad">
+				</div>
+			</div>
+			</section>
+			<section class="sumate">
+			<div class="form__radio">
+				<input type="radio" name="sexo" value="hombre" id="hombre">
+				<label for="hombre" class="form__radio-c">Hombre</label>
+				<input type="radio" name="sexo" value="mujer" id="mujer">
+				<label for="mujer" class="form__radio-c">Mujer</label>
+				<input type="radio" name="sexo" value="no decir" id="no decir">
+				<label for="no decir" class="form__radio-c">Prefiero no decirlo</label>
+			</div>
+			</section>
+			<section class="sumate">
+			<div class="form__checkbox">
+				<input type="checkbox" name="Acepta" value="1" id="terminos">
+				<label for="terminos">Acepta Terminos y Condiciones</label>
+			</div>
+			</section>
+			<div class="form__btn">
+				<input type="submit" value="Enviar">
+				<input type="reset" value="Borrar Datos">
+			</div>
+			</fieldset>
+		</form>
+	</main>	
+	<footer class="pie">
+		<h4 class="pie__titulo--md">Seguinos En Redes Sociales:</h4>
+		<nav class="footer_nav">
+			<a href="https://www.instagram.com" class="pie__enlace--sm"><img src="../img/instagram.png" alt="instagram" target="_blank"><p>Instagram</p></a>
+			<a href="https://www.facebook.com/franco.pipieri.56/"class="pie__enlace--sm" target="_blank"><img src="../img/facebook.png" alt="facebook"><p>Facebook</p></a>
+			<a href="https://soundcloud.com/cori-boyy"class="pie__enlace--sm" target="_blank"><img src="../img/soundcloud.png" alt="soundcloud"><p>SoundCloud</p></a>
+		</nav>
+	</footer>
+	</div>
+</body>
+</html>
