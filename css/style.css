@@ -34,7 +34,8 @@ section{
 	}
 				/*Inicia el Header*/
 header{
-	background-color: black;
+	background: rgb(0,0,0);
+	background: linear-gradient(90deg, rgba(0,0,0,1) 25%, rgb(51, 19, 19) 50%, rgba(0,0,0,1) 75%);
 	grid-area: header;
 	display: block;
 	height: 20vh;
@@ -365,7 +366,8 @@ fieldset{
 				/*Inicia el Footer*/
 .pie{
 	font-size: 1.6rem;
-	background-color: black;
+	background: rgb(0,0,0);
+	background: linear-gradient(90deg, rgba(0,0,0,1) 25%, rgb(51, 19, 19) 50%, rgba(0,0,0,1) 75%);
 	grid-area: footer;
 	display: flex;
 	flex-direction: column;
