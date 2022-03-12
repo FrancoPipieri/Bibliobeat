@@ -9,6 +9,8 @@ build/Release
 
 # Dependency directories
 node_modules/
+*.ai
+*.temp
 jspm_packages/
 
 # TypeScript v1 declaration files
