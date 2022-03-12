@@ -6,7 +6,7 @@
 	<title>Tracklist</title>
 	<link rel="shortcut icon" href="../img/icon.jfif">
 	<link rel="stylesheet" href="../css/style.css">
-	
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 	<div class="grid">
@@ -33,7 +33,7 @@
 			<img src="../img/AD2.jpg" alt="carrusel" class="img__carrusel">
 			<img src="../img/OZORA5.jpg" alt="carrusel" class="img2__carrusel">
 		</div>
-		<div class="tabla">
+		<div data-aos="zoom-in" data-aos-duration="1000" class="tabla">
 			<h3 class="tabla__titulo">Tracks</h3>
 			<div class="tabla__contenido">
 			<section>
@@ -118,5 +118,10 @@
 	</nav>
 </footer>
 </div>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
 </body>
 </html>
