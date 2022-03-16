@@ -38,15 +38,17 @@ header{
 	background: linear-gradient(90deg, rgba(0,0,0,1) 25%, rgb(51, 19, 19) 50%, rgba(0,0,0,1) 75%);
 	grid-area: header;
 	display: block;
-	height: 20vh;
 }
 header div{
 	display: flex;
 	flex-direction: row;
 	align-content: center;
 	align-items: stretch;
-	height: 70%;
+	padding: 4px;
 	
+}
+.encabezado__img{
+	width: 20%;
 }
 .encabezado__titulo{
 	font-size: 2.5rem;
@@ -59,7 +61,6 @@ header div{
 .nav__enlace{
 	font-size: 1.3rem;
 	list-style: none;
-	height: 25%;
 	display: flex;
 	flex-direction: row-reverse;
 	justify-content: space-evenly;
@@ -247,7 +248,7 @@ fieldset{
 }
 .form__data .form__radio label,
 .form__data .form__checkbox label{
-	margin: 10px 16px;
+
 	padding: 10px 16px 6px 40px;
 	display: inline-block;
 	position: relative;
@@ -264,15 +265,15 @@ fieldset{
 .form__data .form__radio label:before,
 .form__data .form__checkbox label:before{
 	content: "";
-	width: 12px;
-	height: 12px;
-	display: inline-block;
+	width: 15px;
+	height: 15px;
+	display: block;
 	background: none;
 	border: 3px solid rgb(173, 54, 30);
 	border-radius: 50%;
 	position: absolute;
 	left: 12px;
-	top: 6px;
+	top: 33%;
 }
 .form__data .form__checkbox label:before{
 	border-radius: 3px;
@@ -280,7 +281,7 @@ fieldset{
 
 .form__data input[type="radio"]:checked +label,
 .form__data input[type="checkbox"]:checked + label{
-	padding: 8px 20px;
+	padding: 10px 25px;
 	background-color: #570530;
 	border-radius: 2px;
 	color: rgb(210, 210, 210);
@@ -413,8 +414,8 @@ fieldset{
 		"main main" 
 		"footer footer";
 	}
-	header{
-		height: 15vh;
+	.encabezado__img{
+		width: 15%;
 	}
 	.encabezado__titulo{
 		font-size: 4rem;
@@ -423,7 +424,6 @@ fieldset{
 
 	.nav__enlace{
 		font-size: 1.6rem;
-		margin: 0 20px;
 	}
 			/*Index*/
 	.columna{
@@ -511,15 +511,18 @@ fieldset{
 		 "main main main" "main main main"
 		 "footer footer footer";
 	}
-	header{
-		height: 20vh;
+	header div{
+		padding: 0;
+	}
+	.encabezado__img{
+		width: 10%;
 	}
 	.encabezado__titulo{
 		width: 80%;
 	}
 	.nav__enlace a{
 		padding: 10px 10px;
-		margin: 0 10px;
+		margin: 0 4px;
 	}
 	.nav__enlace a:hover{
 		background-color: #055052;
