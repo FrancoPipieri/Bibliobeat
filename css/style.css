@@ -500,7 +500,7 @@ fieldset{
 	/*Contacto*/
 
 	.pie{
-		height: 10vh;
+		height: 15vh;
 	}
 }
 @media (min-width: 992px){
@@ -670,6 +670,7 @@ fieldset{
 	.pie__enlace--sm p{
 		display: inline;
 		font-size: 1.4rem;
+		margin: 0 4px;
 	}
 	.footer_nav{
 		justify-content: center;
