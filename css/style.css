@@ -499,9 +499,6 @@ fieldset{
 	}
 	/*Contacto*/
 
-	.pie{
-		height: 15vh;
-	}
 }
 @media (min-width: 992px){
 	.grid{
@@ -660,9 +657,6 @@ fieldset{
 	}
 
 	/*Footer*/
-	.pie{
-		height: 14vh;
-	}
 	.pie__enlace--sm{
 		display: flex;
 		align-items: center;
