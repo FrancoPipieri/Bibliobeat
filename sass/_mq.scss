@@ -1,0 +1,214 @@
+@media only screen and (min-width: 576px){
+	.encabezado__img{
+		width: 15%;
+	}
+	.encabezado__titulo{
+		font-size: 4rem;
+		width: 73%;
+	}
+	.nav__enlace{
+		font-size: $fontMd;
+	}
+			/*Index*/
+	.columna{
+		overflow-y: scroll;
+		height: 30vh;
+		width: 45%;
+		align-content: space-around;
+	}
+	.img1{order: 1;}
+	.tx1{order: 2;}
+	.tx2{order: 3;}
+	.img2{order: 4;}
+	.tx3{order: 6;}
+	.img3{order: 5;}
+			/*Index*/
+			/*Tracklist*/
+	.tabla__titulo{
+		padding: 15px;
+        section{
+            width: 50%;
+		    font-size: $fontSm;
+        }
+	}
+	/*Tracklist*/
+	/*Sobre Mi*/
+	.contenido{
+		width: 80vw;
+		margin: 10px auto;
+		align-content: space-around;
+	}
+	/*Sobre Mi*/
+	/*Sumate*/
+	.form__div{
+		display: flex;
+		flex-direction: row;
+	}
+	.form__radio{
+		flex-direction: row;
+		justify-content: space-around;
+	}
+	.form__btn{
+		flex-direction: row;
+		justify-content: space-evenly;
+	}
+	/*Sumate*/
+	/*Contacto*/
+	.formulario__cont label{
+		font-size: $fontLg;
+		padding: 6px;
+		margin: 10px 0;
+	}
+	.contact__center{
+		flex-direction: row;
+		margin: 10px;
+	}
+	.contact__btn{
+		width: 50%;
+	}
+	/*Contacto*/
+
+@media (min-width: 992px){
+	.encabezado__img{
+		width: 6%;
+	}
+	.encabezado__titulo{
+		width: 85%;
+	}
+	.nav__enlace{
+        a{
+			font-size: $fontMd;
+            padding: 10px 10px;
+		    margin: 0 4px;
+            &:hover{
+                background-color: #055052;
+                padding: auto 10px;
+            }
+        }
+	}
+	main{
+		min-height: 70vh;
+	}
+	/*Index*/
+	.columna{
+		height: 38vh;
+		overflow-y: auto;
+		width: 30%;
+	}
+	.img1{order: 1;}
+	.tx1{order: 2;}
+	.img2{order: 3;}
+	.tx2{order: 4;}
+	.img3{order: 5;}
+	.tx3{order: 6;}
+	/*Index*/
+
+	/*Tracklist*/
+	.tabla{
+		width: 85%;
+		margin: 10px auto;
+	}
+	.tabla__titulo{
+		font-size: $fontLg ;
+		padding: 20px;
+	}
+	.tabla__contenido section{
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+        p{
+            align-self: center;
+            width: 20%; 
+        }
+	}
+	/*Tracklist*/
+	/*Sobre Mi*/
+
+	.contenido{
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		grid-template-areas: "logo desc" "track desc";
+		grid-column-gap: 40px;
+		width: 75%;
+	}
+	.logo{
+		grid-area: logo;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 10px;
+	}
+	.desc{
+		grid-area: desc;
+	}
+	.track{
+		grid-area: track;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 10px;
+	}
+	/*Sobre Mi*/
+	/*Sumate*/
+	.form__data{
+		width: 70%;
+	}
+	.form__div{
+		width: 85%;
+		margin: 0 auto;
+	}
+	.form__text{
+		margin: 0 20px;
+	}
+	/*Sumate*/
+	/*Contacto*/
+	.formulario__cont{
+		width: 60%;
+        section{
+            div{
+        		display: flex;
+		        flex-direction: column;
+	        	width: 80%;
+	        	margin: 1px auto;        
+            }
+        }
+	}
+	.contact__field{
+		cursor: pointer;
+	}
+	#comentario{
+		resize: both;
+	}
+	.contact__center{
+		justify-content: space-evenly;
+	}
+	.contact__btn{
+		width: 30%;
+		cursor: pointer;
+        &:hover{
+            background-color: rgba(87, 5, 48, 0.7);
+        	transition: background-color 0.5s;
+        }
+        &:active{
+            color: #5C51C4;
+        }
+	}
+	/*Footer*/
+	.pie__enlace--sm{
+		display: flex;
+		align-items: center;
+        p{
+            display: inline;
+            font-size: $fontSm;
+            margin: 0 4px;
+        }
+	}
+	}
+	.footer_nav{
+		align-items: baseline;
+		font-size: $fontLg;
+	}
+}

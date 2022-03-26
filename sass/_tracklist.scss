@@ -1,0 +1,24 @@
+.tabla{
+	border: 4px solid #a3ddcb;
+	background-color: rgba(238, 235, 221, 0.7);
+	margin: 20px 10px;
+}
+.tabla__titulo{
+	font-size: $fontMd;
+	text-align: center;
+	border: 1px solid black;
+	padding: 10px;
+	text-decoration: underline;
+}
+.tabla section{
+	text-align: center;
+	border: 1px solid;
+	font-size: $fontSm;
+	padding: 4px;
+    p{
+        font-family: $Roboto;
+    }
+    a:hover{
+        font-weight: bold;
+    }
+}

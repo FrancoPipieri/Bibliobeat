@@ -1,0 +1,42 @@
+.body__creador{
+	background-color: rgba(216, 185, 164, 0.78);
+	margin: 10px;
+	border: solid 4px #a3ddcb ;
+	border-radius: 6px;
+	font-size: $fontSm;
+	font-weight: 600;
+	height: auto;
+    .foto__pie{
+      color: black;
+      font-family: $Roboto;
+      font-size: $fontSm;
+      padding: 8px;
+      margin: 0;
+      margin-bottom: 10px;
+    }
+    p{
+      font-size: $fontLg;
+      margin: 10px;
+      padding: 10px;
+      color: #00631C;
+    }
+    img{
+      margin: 10px;
+    }
+    a{
+      img{
+        margin: 10px;
+      }
+      img:hover{
+        border: 1px solid black;
+        transform: scale(0.9);
+        cursor: pointer;
+        transition: transform 0.4s;
+      }
+    }
+}
+.contenido{
+	flex-direction: column;
+	width: 100%;
+	text-align: center
+}

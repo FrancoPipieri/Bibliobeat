@@ -1,0 +1,18 @@
+.padre{
+	font-size: $fontMd;
+	justify-content: space-between;
+	align-content: space-evenly;
+	width: 100%;
+	padding: 10px;
+	margin: 0;
+}
+.columna{
+	background-color: $contenidoColor;
+	color: rgb(87, 5, 48);
+	padding: 2.4rem; 
+	margin: 10px 0;
+	font-family: $Poppins;
+	border: solid 4px #a3ddcb ;
+	border-radius: 6px;
+	overflow-y: auto;
+}

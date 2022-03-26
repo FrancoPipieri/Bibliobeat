@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,400;1,700&family=Roboto+Serif:ital,wght@1,300&family=Roboto:wght@300&display=swap');
+// Variables
+// colores
+$mainColor:rgb(243, 242, 201);
+$contenidoColor:  rgba(216, 185, 164, 0.78);
+// Fonts
+$Poppins: 'Poppins', sans-serif;
+$Roboto: 'Roboto Serif', sans-serif;
+$fontSm: 1.4rem ;
+$fontMd: 1.6rem;
+$fontLg: 1.8rem;
+
+// contenido
+*{
+	margin: 0; padding: 0;
+	font-family: $Roboto;
+	box-sizing: border-box;
+	overflow-x: hidden;
+}
+html{
+	font-size: 62.5%;
+}
+body{
+	background-image: url(../img/fondo.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	margin: 0; padding: 0 ;
+}
+main{
+	min-height: 75vh;
+}
+section{
+	padding: 20px;
+}
+p{
+	margin: 0;
+	font-family: $Poppins;
+}
+// header
+header{
+	background: linear-gradient(90deg, rgba(0,0,0,1) 25%, rgb(51, 19, 19) 50%, rgba(0,0,0,1) 75%);
+	display: block;
+    div{
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        align-items: stretch;
+        padding: 4px;	
+    }
+}
+.encabezado__img{
+	width: 20%;
+}
+.encabezado__titulo{
+	font-size: 2.5rem;
+	color: $mainColor;
+	width: 73%;
+	margin: auto 0;
+	text-align: center;
+	text-transform: uppercase;
+}
+.nav__enlace{
+	font-size: $fontSm;
+	list-style: none;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-evenly;
+    li{
+		display: inline-block;
+	}
+    a{
+        text-decoration: none;
+        color: $mainColor;
+        transition: all 0.7s;
+        display: block;
+        padding: 10px 5px;
+        cursor: pointer;
+    }
+}
+// footer
+.pie{
+	font-size: $fontMd;
+	background: linear-gradient(90deg, rgba(0,0,0,1) 25%, rgb(51, 19, 19) 50%, rgba(0,0,0,1) 75%);
+	flex-direction: column;
+}
+.footer_nav{
+	flex-direction: row;
+	margin-bottom: 8px;
+}
+	.pie__titulo--md{
+		color: $mainColor;
+		padding: 10px 0;
+		font-size: $fontLg;
+		text-align: center;
+	}
+	.pie__enlace--sm{
+		padding: 0 30px;
+		color: $mainColor;
+		font-size: $fontSm;
+        p{
+            display: none;
+        }
+        &:hover{
+            font-weight: 600;
+		    transition: all 0.2s;
+        }
+	}
