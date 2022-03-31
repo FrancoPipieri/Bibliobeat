@@ -45,23 +45,20 @@
 		flex-direction: row;
 	}
 	.form__radio{
-		flex-direction: row;
-		justify-content: space-around;
+		@include conteiner(0, 0, flex, row, space-around, flex-start);
 	}
 	.form__btn{
-		flex-direction: row;
-		justify-content: space-evenly;
+		@include conteiner(0, 0, flex, row, space-evenly, flex-start);
 	}
 	/*Sumate*/
 	/*Contacto*/
-	.formulario__cont label{
+	.styleForm label{
 		font-size: $fontLg;
 		padding: 6px;
 		margin: 10px 0;
 	}
 	.contact__center{
-		flex-direction: row;
-		margin: 10px;
+		@include conteiner(10px, 4px, flex, row, flex-start, flex-start);
 	}
 	.contact__btn{
 		width: 50%;
@@ -107,21 +104,23 @@
 	.tabla{
 		width: 85%;
 		margin: 10px auto;
+		
+		.tabla__titulo{
+			font-size: $fontLg ;
+			padding: 20px;
+		}
+		.tabla__contenido section{
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: space-evenly;
+        	p{
+        	    align-self: center;
+        	    width: 20%; 
+        	}
+		}
 	}
-	.tabla__titulo{
-		font-size: $fontLg ;
-		padding: 20px;
-	}
-	.tabla__contenido section{
-		width: 100%;
-		display: flex;
-		align-items: center;
-		justify-content: space-evenly;
-        p{
-            align-self: center;
-            width: 20%; 
-        }
-	}
+	
 	/*Tracklist*/
 	/*Sobre Mi*/
 
@@ -145,11 +144,8 @@
 	}
 	.track{
 		grid-area: track;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
+		@include conteiner(10px, 0, flex, column, center, center);
 		align-items: center;
-		margin: 10px;
 	}
 	/*Sobre Mi*/
 	/*Sumate*/
@@ -168,34 +164,36 @@
 	.formulario__cont{
 		width: 60%;
         section{
-            div{
+            .styleForm{
         		display: flex;
 		        flex-direction: column;
 	        	width: 80%;
-	        	margin: 1px auto;        
+	        	margin: 1px auto;  	
+				.contact__field{
+					cursor: pointer;
+				}
+				#comentario{
+					resize: both;
+				}      
             }
         }
 	}
-	.contact__field{
-		cursor: pointer;
-	}
-	#comentario{
-		resize: both;
-	}
+
 	.contact__center{
 		justify-content: space-evenly;
+		.contact__btn{
+			width: 30%;
+			cursor: pointer;
+    		&:hover{
+    		    background-color: rgba(87, 5, 48, 0.7);
+				transition: background-color 0.5s;
+        	}
+        	&:active{
+        		color: #5C51C4;
+    		}
+		}
 	}
-	.contact__btn{
-		width: 30%;
-		cursor: pointer;
-        &:hover{
-            background-color: rgba(87, 5, 48, 0.7);
-        	transition: background-color 0.5s;
-        }
-        &:active{
-            color: #5C51C4;
-        }
-	}
+
 	/*Footer*/
 	.pie__enlace--sm{
 		display: flex;

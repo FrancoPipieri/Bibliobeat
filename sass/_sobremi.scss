@@ -1,24 +1,23 @@
 .body__creador{
-	background-color: rgba(216, 185, 164, 0.78);
+	background-color: map-get($map: $paleta, $key: 'background-cont');
 	margin: 10px;
 	border: solid 4px #a3ddcb ;
-	border-radius: 6px;
+	border-radius: 10px;
 	font-size: $fontSm;
 	font-weight: 600;
 	height: auto;
     .foto__pie{
-      color: black;
+      color: map-get($map: $paleta, $key: 'borde-second');
       font-family: $Roboto;
       font-size: $fontSm;
       padding: 8px;
-      margin: 0;
       margin-bottom: 10px;
     }
     p{
       font-size: $fontLg;
       margin: 10px;
       padding: 10px;
-      color: #00631C;
+      color: map-get($map: $paleta, $key: 'colorfont-tx');
     }
     img{
       margin: 10px;
@@ -28,7 +27,7 @@
         margin: 10px;
       }
       img:hover{
-        border: 1px solid black;
+        border: 1px solid map-get($map: $paleta, $key: 'borde-second');
         transform: scale(0.9);
         cursor: pointer;
         transition: transform 0.4s;
