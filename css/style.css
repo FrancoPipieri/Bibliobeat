@@ -174,7 +174,8 @@ header {
   padding: 20px;
   border: 4px solid #a3ddcb;
   border-radius: 10px;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  width: 90%; }
 
 fieldset {
   margin: 0;
@@ -294,6 +295,8 @@ fieldset {
   font-size: 1.4rem;
   font-family: "Poppins", sans-serif;
   font-weight: 300; }
+  .contact__field ::placeholder, .form__div .form__text input ::placeholder {
+    color: mistyrose; }
   .contact__field:focus, .form__div .form__text input:focus {
     border: 2px solid #630000; }
 
@@ -345,6 +348,8 @@ fieldset {
     align-content: space-around; }
   /*Sobre Mi*/
   /*Sumate*/
+  .form__data {
+    width: 75%; }
   .form__div {
     display: flex;
     flex-direction: row; }

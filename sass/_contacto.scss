@@ -20,7 +20,9 @@
 	font-size: $fontSm;
 	font-family: $Poppins;
 	font-weight: 300;
-
+	::placeholder{
+		color: map-get($map: $paleta, $key: 'colorfont-input');
+	}
     &:focus{
 	    border: 2px solid rgb(99, 0, 0);
     }
