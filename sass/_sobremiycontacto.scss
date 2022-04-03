@@ -1,3 +1,45 @@
+.body__creador{
+	background-color: map-get($map: $paleta, $key: 'background-cont');
+	margin: 10px;
+	border: solid 4px #a3ddcb ;
+	border-radius: 10px;
+	font-size: $fontSm;
+	font-weight: 600;
+	height: auto;
+    .foto__pie{
+      color: map-get($map: $paleta, $key: 'borde-second');
+      font-family: $Roboto;
+      font-size: $fontSm;
+      padding: 8px;
+      margin-bottom: 10px;
+    }
+    p{
+      font-size: $fontLg;
+      margin: 10px;
+      padding: 10px;
+      color: map-get($map: $paleta, $key: 'colorfont-tx');
+    }
+    img{
+      margin: 10px;
+    }
+    a{
+      img{
+        margin: 10px;
+      }
+      img:hover{
+        border: 1px solid map-get($map: $paleta, $key: 'borde-second');
+        transform: scale(0.9);
+        cursor: pointer;
+        transition: transform 0.4s;
+      }
+    }
+}
+.contenido{
+	flex-direction: column;
+	width: 100%;
+	text-align: center
+}
+// contacto
 .formulario__cont{
 	background-color: map-get($map: $paleta, $key: 'background-cont');
 	width: 90%;

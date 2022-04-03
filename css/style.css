@@ -167,6 +167,40 @@ header {
   width: 100%;
   text-align: center; }
 
+.formulario__cont {
+  background-color: rgba(216, 185, 164, 0.78);
+  width: 90%;
+  margin: 20px auto;
+  border-radius: 10px;
+  border: 4px solid #a3ddcb; }
+
+.styleForm {
+  color: #570530;
+  font-size: 1.6rem; }
+
+.contact__field, .form__div .form__text input {
+  outline: none;
+  width: 100%;
+  background-color: rgba(128, 114, 112, 0.8);
+  color: mistyrose;
+  margin: 10px 0;
+  border: 1px solid #cccccc;
+  padding: 16px 0px 16px 10px;
+  font-size: 1.4rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300; }
+  .contact__field ::placeholder, .form__div .form__text input ::placeholder {
+    color: mistyrose; }
+  .contact__field:focus, .form__div .form__text input:focus {
+    border: 2px solid #630000; }
+
+.contact__center {
+  display: flex;
+  flex-direction: column; }
+  .contact__center .contact__btn {
+    font-weight: 600;
+    font-size: 1.6rem; }
+
 .form__data {
   font-size: 1.4rem;
   background-color: rgba(216, 185, 164, 0.78);
@@ -272,40 +306,6 @@ fieldset {
     .form__btn input:active, .contact__center input:active {
       color: blue;
       transition: color 0s; }
-
-.formulario__cont {
-  background-color: rgba(216, 185, 164, 0.78);
-  width: 90%;
-  margin: 20px auto;
-  border-radius: 10px;
-  border: 4px solid #a3ddcb; }
-
-.styleForm {
-  color: #570530;
-  font-size: 1.6rem; }
-
-.contact__field, .form__div .form__text input {
-  outline: none;
-  width: 100%;
-  background-color: rgba(128, 114, 112, 0.8);
-  color: mistyrose;
-  margin: 10px 0;
-  border: 1px solid #cccccc;
-  padding: 16px 0px 16px 10px;
-  font-size: 1.4rem;
-  font-family: "Poppins", sans-serif;
-  font-weight: 300; }
-  .contact__field ::placeholder, .form__div .form__text input ::placeholder {
-    color: mistyrose; }
-  .contact__field:focus, .form__div .form__text input:focus {
-    border: 2px solid #630000; }
-
-.contact__center {
-  display: flex;
-  flex-direction: column; }
-  .contact__center .contact__btn {
-    font-weight: 600;
-    font-size: 1.6rem; }
 
 @media only screen and (min-width: 576px) {
   .encabezado__img {
