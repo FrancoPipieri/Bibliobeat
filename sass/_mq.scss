@@ -26,10 +26,10 @@
 			/*Tracklist*/
 	.tabla__titulo{
 		padding: 15px;
-        section{
-            width: 50%;
-		    font-size: $fontSm;
-        }
+	}
+	.tabla__contenido section{
+		width: 50%;
+		font-size: $fontSm;
 	}
 	/*Tracklist*/
 	/*Sobre Mi*/
@@ -70,22 +70,26 @@
 
 @media (min-width: 992px){
 	.encabezado__img{
-		width: 6%;
+		width: 8%;
 	}
 	.encabezado__titulo{
 		width: 85%;
 	}
 	.nav__enlace{
+		ul{
+			justify-content: end;
         a{
 			font-size: $fontMd;
             padding: 10px 10px;
 		    margin: 0 4px;
+			text-align: end;
             &:hover{
                 background-color: #055052;
                 padding: auto 10px;
             }
         }
 	}
+}
 	main{
 		min-height: 70vh;
 	}

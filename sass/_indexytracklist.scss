@@ -6,7 +6,7 @@
 .columna{
 	background-color: map-get($map: $paleta, $key: 'background-cont');
 	color: map-get($map: $paleta, $key: 'colorfont-tx');
-	padding: 2.4rem; 
+	padding: 1.8rem; 
 	margin: 10px 0;
 	font-family: $Poppins;
 	border: solid 4px map-get($map: $paleta, $key: 'borde-main');

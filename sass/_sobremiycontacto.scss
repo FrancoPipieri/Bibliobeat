@@ -25,6 +25,7 @@
     a{
       img{
         margin: 10px;
+		background-color: black;
       }
       img:hover{
         border: 1px solid map-get($map: $paleta, $key: 'borde-second');

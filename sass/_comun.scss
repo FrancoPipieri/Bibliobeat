@@ -59,7 +59,7 @@ header{
 	background: map-get($map: $paleta, $key: 'background-hf');
 	display: block;
     div{
-		@include conteiner(0, 4px, flex, row, flex-start, center);width: 100%;	
+		@include conteiner(0, 0, flex, row, flex-start, center);width: 100%;	
     }
 }
 .encabezado__img{
@@ -74,9 +74,12 @@ header{
 	text-transform: uppercase;
 }
 .nav__enlace{
-	@include conteiner(0, 10px 5px, flex, row-reverse, space-evenly, center);
+	@include conteiner(0, 4px 5px, flex, row-reverse, space-evenly, center);
 	font-size: $fontSm;
 	list-style: none;
+	ul{
+		width: 100%;
+	}
     li{
 		display: inline-block;
 		a{
@@ -84,8 +87,9 @@ header{
         	color: map-get($map: $paleta, $key: 'colorfont-hf');
         	transition: all 0.7s;
         	display: block;
-        	padding: 10px 5px;
+        	padding: 5px 5px;
         	cursor: pointer;
+			text-align: center;
     	}
 	}
     

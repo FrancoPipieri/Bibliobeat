@@ -27,7 +27,7 @@ header {
   display: block; }
   header div {
     margin: 0;
-    padding: 4px;
+    padding: 0;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -47,13 +47,15 @@ header {
 
 .nav__enlace {
   margin: 0;
-  padding: 10px 5px;
+  padding: 4px 5px;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-evenly;
   align-content: center;
   font-size: 1.4rem;
   list-style: none; }
+  .nav__enlace ul {
+    width: 100%; }
   .nav__enlace li {
     display: inline-block; }
     .nav__enlace li a {
@@ -61,8 +63,9 @@ header {
       color: #f3f2c9;
       transition: all 0.7s;
       display: block;
-      padding: 10px 5px;
-      cursor: pointer; }
+      padding: 5px 5px;
+      cursor: pointer;
+      text-align: center; }
 
 .pie {
   font-size: 1.6rem;
@@ -102,7 +105,7 @@ header {
 .columna {
   background-color: rgba(216, 185, 164, 0.78);
   color: #570530;
-  padding: 2.4rem;
+  padding: 1.8rem;
   margin: 10px 0;
   font-family: "Poppins", sans-serif;
   border: solid 4px #a3ddcb;
@@ -155,7 +158,8 @@ header {
   .body__creador img {
     margin: 10px; }
   .body__creador a img {
-    margin: 10px; }
+    margin: 10px;
+    background-color: black; }
   .body__creador a img:hover {
     border: 1px solid black;
     transform: scale(0.9);
@@ -337,9 +341,9 @@ fieldset {
   /*Tracklist*/
   .tabla__titulo {
     padding: 15px; }
-    .tabla__titulo section {
-      width: 50%;
-      font-size: 1.4rem; }
+  .tabla__contenido section {
+    width: 50%;
+    font-size: 1.4rem; }
   /*Tracklist*/
   /*Sobre Mi*/
   .contenido {
@@ -386,16 +390,19 @@ fieldset {
 
 @media only screen and (min-width: 576px) and (min-width: 992px) {
   .encabezado__img {
-    width: 6%; }
+    width: 8%; }
   .encabezado__titulo {
     width: 85%; }
-  .nav__enlace a {
-    font-size: 1.6rem;
-    padding: 10px 10px;
-    margin: 0 4px; }
-    .nav__enlace a:hover {
-      background-color: #055052;
-      padding: auto 10px; }
+  .nav__enlace ul {
+    justify-content: end; }
+    .nav__enlace ul a {
+      font-size: 1.6rem;
+      padding: 10px 10px;
+      margin: 0 4px;
+      text-align: end; }
+      .nav__enlace ul a:hover {
+        background-color: #055052;
+        padding: auto 10px; }
   main {
     min-height: 70vh; }
   /*Index*/
